@@ -4,12 +4,7 @@ import { DM_Sans, Instrument_Serif } from 'next/font/google'
 import './globals.css'
 
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
-const instrumentSerif = Instrument_Serif({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
-  variable: '--font-instrument-serif',
-})
+const instrumentSerif = Instrument_Serif({ subsets: ['latin'], weight: '400', style: ['normal', 'italic'], variable: '--font-instrument-serif' })
 
 export const metadata: Metadata = {
   title: 'MeuCorteJá — Seu salão, no ritmo certo',
@@ -22,15 +17,6 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { colorScheme: 'light', themeColor: '#b6c1ad' }
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="pt-BR" className="bg-[#f4f0e9]">
-      <body className={`${dmSans.variable} ${instrumentSerif.variable} antialiased`}>
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-      </body>
-    </html>
-  )
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="pt-BR" className="bg-[#f4f0e9]"><body className={`${dmSans.variable} ${instrumentSerif.variable} antialiased`}>{children}{process.env.NODE_ENV === 'production' && <Analytics />}</body></html>
 }
