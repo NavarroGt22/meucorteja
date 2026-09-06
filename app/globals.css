@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
 
 @theme inline { --font-sans: 'DM Sans', sans-serif; --font-serif: 'Instrument Serif', serif; --color-background: var(--background); --color-foreground: var(--foreground); --color-border: var(--border); }
 :root { --background: #f4f0e9; --foreground: #1f2928; --border: #d7d6ca; --ink: #1f2928; --cream: #f4f0e9; --sage: #b6c1ad; --coral: #e67356; --blue: #657c8d; --yellow: #e9c76e; }
