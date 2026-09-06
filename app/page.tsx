@@ -62,7 +62,8 @@ export default function Page() {
   return (
     <main>
       <section className="hero" id="inicio">
-        <nav className="nav shell">
+        <div className="hero-inner">
+        <nav className="nav">
           <a href="#inicio" className="brand">
             MeuCorte<span>Já</span>
           </a>
@@ -86,7 +87,7 @@ export default function Page() {
           </button>
         </nav>
 
-        <div className="hero-content hero-content-solo shell">
+        <div className="hero-content hero-content-solo">
           <div className="hero-copy">
             <p className="eyebrow">
               <i /> Operação mais leve, salão mais cheio
@@ -106,10 +107,11 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="hero-note shell">
+        <div className="hero-note">
           <span>Feito para barbearias e salões que não param.</span>
           <span className="line" />
           <span>meucorteja.com</span>
+        </div>
         </div>
       </section>
 
