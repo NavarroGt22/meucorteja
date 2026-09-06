@@ -1,23 +1,16 @@
-﻿# MeuCorteJá — Frontend (LP)
+﻿# MeuCorteJá — Landing Page
 
-App Next.js da plataforma **MeuCorteJá** (cliente + admin + Super Admin).
+LP comercial do produto (**não** é o app dos salões).
 
-## Desenvolvimento
+## Dev
 
 ```bash
 npm install
 npm run dev
 ```
 
-Configure `.env.local` a partir de `.env.example`:
-
-```
-NEXT_PUBLIC_API_URL=http://localhost:3333
-NEXT_PUBLIC_USE_MOCK_ADMIN=false
-```
-
 ## Deploy
 
-Vercel — root do repositório.
+Vercel → root deste repo → domínio `meucorteja.com`.
 
-Backend API: `styleflow-backend` (Railway).
+Contato: meucorteja@gmail.com
