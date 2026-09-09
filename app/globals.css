@@ -11,7 +11,7 @@ a { color: inherit; text-decoration: none; }
 .hero:after { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(31,41,40,.12) .6px, transparent .6px); background-size: 7px 7px; opacity: .35; mix-blend-mode: multiply; }
 .hero-inner { position: relative; z-index: 1; width: 100%; max-width: 1160px; margin: 0; padding: 0 28px; box-sizing: border-box; }
 .nav { height: 90px; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:2; }
-.brand { font-weight:800; letter-spacing:-.07em; font-size: 24px; }.brand span { color:var(--coral); }
+.brand { font-weight:800; letter-spacing:-.07em; font-size: 24px; }.brand span { color:var(--coral); }.brand-with-logo { display:inline-flex; align-items:center; gap:10px; }.brand-logo { border-radius:6px; flex-shrink:0; }.footer a:hover { opacity:1; text-decoration:underline; text-underline-offset:3px; }
 .nav-links { display:flex; align-items:center; gap:34px; font-size:13px; font-weight:600; }.nav-links a:not(.nav-cta) { opacity:.72; }.nav-cta { border-bottom:1px solid currentColor; padding-bottom:4px; }.nav-cta span { color:var(--coral); font-size:17px; margin-left:5px; }
 .menu-button { display:none; border:0; background:transparent; font-size:28px; }
 .hero-content { display:grid; grid-template-columns: .9fr 1.1fr; gap:72px; align-items:center; min-height:545px; position:relative; z-index:1; }

@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   title: 'MeuCorteJá — Seu salão, no ritmo certo',
   description: 'Agendamento, fila e gestão para barbearias e salões de beleza.',
   icons: {
-    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo-mj.png', type: 'image/png' },
+    ],
     apple: [{ url: '/apple-icon.png' }],
   },
 }

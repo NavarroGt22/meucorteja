@@ -231,11 +231,17 @@ export default function Page() {
       </section>
 
       <footer className="footer shell">
-        <a href="#inicio" className="brand">
+        <a href="#inicio" className="brand brand-with-logo">
+          <Image src="/logo-mj.png" alt="MeuCorteJá" width={28} height={28} className="brand-logo" />
           MeuCorte<span>Já</span>
         </a>
         <div>
-          <span>meucorteja.com</span>
+          <a href="https://www.lelecobarbes.com/" target="_blank" rel="noopener noreferrer">
+            lelecobarbes.com
+          </a>
+          <a href="https://www.instagram.com/leleco_barbers" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
         </div>
         <span>© {new Date().getFullYear()} MeuCorteJá</span>
