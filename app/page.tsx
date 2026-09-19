@@ -8,31 +8,31 @@ const features = [
   {
     title: 'Agendamento com horários',
     text: 'Seu cliente escolhe o serviço, profissional e horário sem precisar mandar mensagem.',
-    image: '/screenshots/4-agendamento.webp',
+    image: '/screenshots/4-agendamento.png',
     alt: 'Tela de agendamento online do cliente no sistema MeuCorteJá',
   },
   {
     title: 'Fila dinâmica',
     text: 'Para quem chegou sem marcar: ordem de chegada, previsão e status em um só lugar.',
-    image: '/screenshots/05-fila.webp',
+    image: '/screenshots/05-fila.png',
     alt: 'Tela de fila dinâmica do cliente no sistema MeuCorteJá',
   },
   {
     title: 'Painel do salão',
     text: 'Serviços, equipe, agenda e clientes organizados para a rotina da operação.',
-    image: '/screenshots/04-admin-dash.webp',
+    image: '/screenshots/04-admin-dash.png',
     alt: 'Dashboard do painel administrativo do MeuCorteJá',
   },
   {
     title: 'Página do salão',
     text: 'Um link próprio para apresentar seu espaço e receber agendamentos.',
-    image: '/screenshots/01-rafael-lp.webp',
+    image: '/screenshots/01-rafael-lp.png',
     alt: 'Página pública de agendamento da Barbearia Rafael no MeuCorteJá',
   },
   {
     title: 'Controles de operação',
     text: 'Bloqueie horários, altere status e mantenha o time alinhado durante o dia.',
-    image: '/screenshots/05-admin-agendamento.webp',
+    image: '/screenshots/05-admin-agendamento.png',
     alt: 'Agenda do dia no painel de operação do MeuCorteJá',
   },
 ]
