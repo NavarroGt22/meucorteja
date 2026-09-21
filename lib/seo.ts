@@ -37,4 +37,14 @@ export const FAQ_ITEMS = [
     answer:
       'Sim. A fila dinâmica organiza ordem de chegada, previsão e status para quem chegou sem marcar, no mesmo sistema do agendamento.',
   },
+  {
+    question: 'Dá para ter horário diferente em cada dia da semana?',
+    answer:
+      'Sim. No painel, em Funcionamento, cada dia tem interruptor Atendendo/Fechado e campos de início e fim. Dias fechados mostram a mensagem de folga para o cliente.',
+  },
+  {
+    question: 'O cliente é avisado quando chegar perto do horário?',
+    answer:
+      'Sim. Há um lembrete automático da agenda: o salão escolhe quantos minutos antes (por exemplo, 10) e o cliente recebe no WhatsApp sem a equipe precisar lembrar na mão.',
+  },
 ] as const

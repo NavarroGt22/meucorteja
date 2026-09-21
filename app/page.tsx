@@ -80,6 +80,9 @@ export default function Page() {
                   <a href="#produto" onClick={() => setMenuOpen(false)}>
                     O produto
                   </a>
+                  <a href="#novidades" onClick={() => setMenuOpen(false)}>
+                    Novidades
+                  </a>
                   <a href="#funciona" onClick={() => setMenuOpen(false)}>
                     Como funciona
                   </a>
@@ -156,7 +159,7 @@ export default function Page() {
               agenda, atende e administra.
             </p>
           </div>
-          <div className="steps">
+          <div className="steps steps-five">
             <article>
               <b>01</b>
               <h3>O cliente escolhe</h3>
@@ -171,6 +174,19 @@ export default function Page() {
               <b>03</b>
               <h3>O dia acontece</h3>
               <p>Todo mundo acompanha o atendimento, a fila e a operação em tempo real.</p>
+            </article>
+            <article>
+              <b>04</b>
+              <h3>O salão decide o expediente</h3>
+              <p>Você configura o funcionamento dia a dia. O link de agendamento respeita esses horários automaticamente.</p>
+            </article>
+            <article>
+              <b>05</b>
+              <h3>WhatsApp no fluxo do dia</h3>
+              <p>
+                O cliente agenda pelo link e recebe a confirmação. Se algo mudar — cancelar, remarcar, lembrar —
+                a mensagem vai junto.
+              </p>
             </article>
           </div>
         </section>
@@ -211,8 +227,65 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="novidades shell" id="novidades" aria-labelledby="novidades-title">
+          <div className="section-kicker">03 — Novidades</div>
+          <div className="section-header novidades-header">
+            <h2 id="novidades-title">
+              Novidades pensadas
+              <br />
+              <em>para a rotina real.</em>
+            </h2>
+            <p>
+              Horário por dia e WhatsApp automático: menos improviso no painel e menos mensagem na mão.
+            </p>
+          </div>
+
+          <article className="novidade-block" aria-labelledby="expediente-title">
+            <div className="novidade-copy">
+              <p className="section-kicker">Novidade</p>
+              <h3 id="expediente-title">
+                Cada dia com o
+                <br />
+                <em>seu próprio horário.</em>
+              </h3>
+              <p>
+                Segunda até mais tarde, sábado só de manhã, domingo de folga. No MeuCorteJá você liga ou desliga
+                cada dia e define início e fim separados — sem horário único para a semana inteira.
+              </p>
+              <ul className="novidade-list">
+                <li>Atendendo / Fechado por dia da semana</li>
+                <li>Início e fim independentes</li>
+                <li>O cliente só vê dias e horários em que o salão realmente atende</li>
+              </ul>
+            </div>
+          </article>
+
+          <article className="novidade-block" aria-labelledby="whatsapp-title">
+            <div className="novidade-copy">
+              <p className="section-kicker">Novidade</p>
+              <h3 id="whatsapp-title">
+                O cliente recebe no WhatsApp
+                <br />
+                <em>sem você digitar nada.</em>
+              </h3>
+              <p>
+                Confirmação, lembrete perto do horário, cancelamento e remarcação saem sozinhos. Você escreve cada
+                texto uma vez; o MeuCorteJá avisa no momento certo — inclusive minutos antes do corte.
+              </p>
+              <ul className="novidade-list">
+                <li>Confirmação automática quando o cliente marca o horário</li>
+                <li>Lembrete automático antes do horário marcado (você define quantos minutos antes)</li>
+                <li>Aviso se o salão cancelar o agendamento</li>
+                <li>Aviso se o cliente cancelar</li>
+                <li>Mensagem quando o horário for remarcado</li>
+                <li>Textos editáveis — com a cara da sua barbearia</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
         <section className="audience shell" aria-labelledby="audience-title">
-          <div className="section-kicker">03 — Para quem é</div>
+          <div className="section-kicker">04 — Para quem é</div>
           <div className="audience-content">
             <h2 id="audience-title">
               Seu jeito de atender
@@ -240,7 +313,7 @@ export default function Page() {
         </section>
 
         <section className="faq shell" id="faq" aria-labelledby="faq-title">
-          <div className="section-kicker">04 — Dúvidas frequentes</div>
+          <div className="section-kicker">05 — Dúvidas frequentes</div>
           <div className="faq-heading">
             <h2 id="faq-title">
               Perguntas sobre o
@@ -299,6 +372,10 @@ export default function Page() {
           </a>
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
         </div>
+        <p className="footer-note">
+          Horário de funcionamento por dia, lista de clientes organizada e link do salão pronto para compartilhar —
+          o MeuCorteJá acompanha a rotina real da barbearia.
+        </p>
         <span>© {new Date().getFullYear()} MeuCorteJá</span>
       </footer>
     </>
