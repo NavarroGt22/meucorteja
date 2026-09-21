@@ -87,7 +87,7 @@ export default function Page() {
                     Dúvidas
                   </a>
                   <a href="#contato" onClick={() => setMenuOpen(false)} className="nav-cta">
-                    Falar com a gente <span aria-hidden="true">↗</span>
+                    Falar com a gente <span className="icon-arrow" aria-hidden="true" />
                   </a>
                 </div>
                 <button
@@ -118,7 +118,7 @@ export default function Page() {
                   cuidar do que realmente importa: o seu cliente.
                 </p>
                 <a href={`mailto:${CONTACT_EMAIL}`} className="button button-light">
-                  Falar no e-mail <span aria-hidden="true">↗</span>
+                  Falar no e-mail <span className="icon-arrow" aria-hidden="true" />
                 </a>
               </div>
               <div className="hero-visual">
@@ -273,7 +273,7 @@ export default function Page() {
               dela.
             </p>
             <a href={`mailto:${CONTACT_EMAIL}`} className="button button-dark">
-              {CONTACT_EMAIL} <span aria-hidden="true">↗</span>
+              {CONTACT_EMAIL} <span className="icon-arrow" aria-hidden="true" />
             </a>
           </div>
         </section>
